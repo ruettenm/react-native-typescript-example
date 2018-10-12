@@ -7,4 +7,16 @@ target 'ReactNativeTypescript' do
   # Pods for ReactNativeTypescript
   pod 'Firebase/Core', '~> 5.9.0'
 
+  #pod 'Firebase/AdMob', '~> 5.9.0'
+  #pod 'Firebase/Analytics', '~> 5.9.0'
+  pod 'Firebase/Auth', '~> 5.9.0'
+  pod 'Firebase/Firestore', '~> 5.9.0'
+  #pod 'Firebase/Crash', '~> 5.9.0'
+  #pod 'Firebase/Database', '~> 5.9.0'
+  #pod 'Firebase/DynamicLinks', '~> 5.9.0'
+  #pod 'Firebase/Invites', '~> 5.9.0'
+  #pod 'Firebase/Messaging', '~> 5.9.0'
+  #pod 'Firebase/Performance', '~> 5.9.0'
+  #pod 'Firebase/RemoteConfig', '~> 5.9.0'
+  #pod 'Firebase/Storage', '~> 5.9.0'
 end

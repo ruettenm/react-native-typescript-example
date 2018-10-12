@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Platform, StyleSheet, Text, View } from 'react-native'
+import firebase from 'react-native-firebase'
 import { Navigation } from 'react-native-navigation'
 
 const instructions = Platform.select({
@@ -9,6 +10,19 @@ const instructions = Platform.select({
 
 export default class Home extends Component<{}> {
     public render() {
+        firebase.auth()
+            .signInAnonymously()
+            .then(credential => {
+                if (credential) {
+                    console.log('default app user ->', credential.user.toJSON())
+                } else {
+                    console.log('no credential found')
+                }
+            })
+            .catch(err => {
+                console.log('error', err)
+            })
+
         return (
             <View style={ styles.container }>
                 <Text style={ styles.welcome }>React Native is running with TypeScript!</Text>

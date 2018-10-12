@@ -19,6 +19,10 @@
         ],
         "jsx-curly-spacing": [
             { "when": "always" }
+        ],
+        "arrow-parens": [
+            true,
+            "ban-single-arg-parens"
         ]
     }
 }
